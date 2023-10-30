@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Workspace.module.css'
 import TitleInput from './TitleInput/TitleInput'
 
