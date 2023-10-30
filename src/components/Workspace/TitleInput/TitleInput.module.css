@@ -1,6 +1,11 @@
+.globalCont{
+    margin-bottom: 0;
+}
+
 .titleBtn{
     display: flex;
     margin-top: 30px;
+
 }
 
 .input{

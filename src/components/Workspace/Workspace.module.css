@@ -1,11 +1,16 @@
 .title{
-
+    max-height: 100px;
 }
 
 .tags{
+    display: flex;
+    margin-top: 0;
+    padding: 0;
+
+
 
 }
 
 .comment{
-    
+
 }
