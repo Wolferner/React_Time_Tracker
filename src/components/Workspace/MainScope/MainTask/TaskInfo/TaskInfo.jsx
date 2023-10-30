@@ -5,7 +5,12 @@ const TaskInfo = () =>{
     return(
         <div className="row">
             <form className="col s12 m6">
-                    <div className="row">
+                    <label htmlFor="info_label"><h6>Additional Info</h6></label>
+                    <div className="row" id="info_label">
+                        <div className="chip col">
+                            Tag
+                            <i className="close material-icons">close</i>
+                        </div>
                         <div className="input-field col s12">
                             <i className="material-icons prefix">account_circle</i>
                             <input id="icon_prefix" type="text" className="validate"/>
