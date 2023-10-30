@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './WorkspaceHeader.module.css'
-import TitleInput from '../TitleInput/TitleInput'
-import TagsCollector from '../TagsCollector/TagsCollector'
-import TextArea from '../TextArea/TextArea'
+import TitleInput from './TitleInput/TitleInput'
+import TagsCollector from './TagsCollector/TagsCollector'
+import TextArea from './TextArea/TextArea'
 
 const WorkspaceHeader = () =>{
 
