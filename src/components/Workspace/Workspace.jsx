@@ -16,6 +16,9 @@ const Workspace = () =>{
             <div className={`col s12`}>
                 <WsSearching/>
             </div>
+            <div className={`col s12`}>
+                
+            </div>
         </div>
     )
 }
