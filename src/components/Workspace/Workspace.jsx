@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Workspace.module.css'
 import WorkspaceHeader from './WorkspaceHeader/WorkspaceHeader'
 import WsSearching from './WsSearching/WsSearching'
+import MainScope from './MainScope/MainScope'
 
 const Workspace = () =>{
 
@@ -17,7 +18,7 @@ const Workspace = () =>{
                 <WsSearching/>
             </div>
             <div className={`col s12`}>
-                
+                <MainScope/>
             </div>
         </div>
     )
