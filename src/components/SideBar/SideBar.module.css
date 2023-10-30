@@ -1,0 +1,36 @@
+.SideBar{
+    display: flex;
+    max-width: 80px;
+}
+
+
+.left{
+    order: 0;
+
+}
+.top {
+    order: 0;
+
+}
+
+/* .SideBar.top .SideMenu .cont,
+.SideBar.top .SideMenu .endMenu,
+.SideBar.top .SideMenu .startMenu,
+.SideBar.top .SideMenu .menuBox1 li{
+    flex-direction: row; 
+}
+
+.SideBar.top .SideMenu .cont{
+    height: 100%;
+} */
+
+.right {
+
+    order: 1;
+
+}
+
+.bottom {
+    order: 3;
+}
+
