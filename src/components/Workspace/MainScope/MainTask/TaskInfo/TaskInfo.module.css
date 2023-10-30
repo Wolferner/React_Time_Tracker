@@ -1,0 +1,16 @@
+.formCont{
+    padding: 0px 30px !important;
+
+}
+
+div > i{
+    font-size: 1.75rem !important;
+}
+
+.inputBox{
+    margin: 5px;
+}
+
+.rowCont{
+    margin-bottom: 10px;
+}
