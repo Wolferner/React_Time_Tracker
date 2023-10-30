@@ -4,7 +4,7 @@ const TaskInfo = () =>{
 
     return(
         <div className="row">
-            <form className="col s12">
+            <form className="col s12 m6">
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">account_circle</i>
