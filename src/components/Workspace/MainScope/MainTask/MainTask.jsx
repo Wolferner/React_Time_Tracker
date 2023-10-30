@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './MainTask.module.css'
+import TaskInfo from "./TaskInfo/TaskInfo";
 
 const MainTask = () =>{
 
@@ -23,26 +24,8 @@ const MainTask = () =>{
                 </div>
             </div>
 
-            <div className="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate"/>
-                            <label htmlFor="icon_prefix">Customer</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">insert_chart</i>
-                            <input id="icon_project" type="text" class="validate"/>
-                            <label htmlFor="icon_project">Project</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">lightbulb_outline</i>
-                            <input id="icon_incident" type="text" class="validate"/>
-                            <label htmlFor="icon_incident">INC</label>
-                        </div>
-                    </div>
-                </form>
+            <div className="col s12 m6">
+                <TaskInfo/>
             </div>
         </div>
     )
