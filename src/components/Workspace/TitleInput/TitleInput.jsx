@@ -18,10 +18,10 @@ const TitleInput = () =>{
     
 
     return(
-        <div className="row">
+        <div className={`${styles.globalCont} row`}>
 
             <div className={`${styles.input} col s9 `}>
-                <div className='row'>
+                <div className={`${styles.globalCont} row`}>
                     <div className={`${styles.titleBtn} col s1 `}>
                         <a className="secondary-content prefix-button" href=""><i className="material-icons prefix">textsms</i></a>
                         <a className="secondary-content prefix-button" href=""><i className="material-icons prefix">textsms</i></a>
