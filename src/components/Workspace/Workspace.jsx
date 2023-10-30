@@ -1,25 +1,13 @@
 import React from 'react'
 import styles from './Workspace.module.css'
-import TitleInput from './TitleInput/TitleInput'
-import TagsCollector from './TagsCollector/TagsCollector'
+import WorkspaceHeader from './WorkspaceHeader/WorkspaceHeader'
 
 const Workspace = () =>{
 
-
     return(
-<div className='row'>
-    <div className={`${styles.title} col s12 `}>
-        <TitleInput/>
+    <div >
+        <WorkspaceHeader/>
     </div>
-
-    <div className={`${styles.tags} col s12 `}>
-        <TagsCollector/>
-    </div>
-
-    <div className={`${styles.comment} col s12 `}>
-
-    </div>
-</div>
     )
 }
 
