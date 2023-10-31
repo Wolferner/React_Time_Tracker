@@ -11,6 +11,7 @@ div > i{
     margin: 5px;
 }
 
-.rowCont{
+.rowContent{
     margin-bottom: 10px;
+    outline: 1px dotted gray;
 }

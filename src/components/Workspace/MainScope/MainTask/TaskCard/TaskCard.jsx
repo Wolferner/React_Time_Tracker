@@ -11,7 +11,7 @@ const showStateHandler = (event) =>{
 }
 
 // perekluchatel textarea na otobrazhenije texta
-const [text, setText] = useState('ssdfsdfsdfsdfdsfsdfdsfsdfsdfsdfdsfsd')
+const [text, setText] = useState(props.taskData.content)
 const [isEditing, setIsEditing] = useState(false)
 
 const togleHandler = ()=>{
@@ -27,7 +27,7 @@ const changeTextHandler = (event) =>{
             <div className="col s12 m6">
                     <div className="card blue-grey darken-1">
                         <div className={` card-content white-text`}>
-                            <span className="card-title">Card Title</span>
+                            <span className="card-title">{props.taskData.title}</span>
 
                             {isEditing 
                             ?  (<div className="input-field col s12">
