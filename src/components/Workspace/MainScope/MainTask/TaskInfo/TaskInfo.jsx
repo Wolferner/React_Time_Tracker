@@ -6,7 +6,7 @@ const TaskInfo = () =>{
     return(
         <div className= {`${styles.rowContent} row`}>
             <form className={`${styles.formCont} col s12 m6`}>
-                <label htmlFor="info_label"><h6>Additional Info</h6></label>
+                <h6>Additional Info</h6>
                 <div className="row" id="info_label">
 
                     <div className="chip col">

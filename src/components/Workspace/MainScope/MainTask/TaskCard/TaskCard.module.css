@@ -1,0 +1,19 @@
+.timer{
+    display: flex;
+
+}
+
+.btns{
+    display: flex;
+}
+
+.cardFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings{
+    display: flex;
+    align-items: center;
+    margin-right: 10px !important;
+}
