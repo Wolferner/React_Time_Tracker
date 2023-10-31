@@ -1,22 +1,43 @@
 import React,{useState} from "react";
 import styles from './TaskCard.module.css'
 
+
 const TaskCard = (props) =>{
 
+// pokazivet ili prjachet informaciju
 const showStateHandler = (event) =>{
     event.preventDefault()
     props.onGetTaskInfo(!props.value)
-
 }
+
+// perekluchatel textarea na otobrazhenije texta
+const [text, setText] = useState('ssdfsdfsdfsdfdsfsdfdsfsdfsdfsdfdsfsd')
+const [isEditing, setIsEditing] = useState(false)
+
+const togleHandler = ()=>{
+    setIsEditing(!isEditing)
+}
+const changeTextHandler = (event) =>{
+    setText(event.target.value)
+}
+
 
     return(
         <div className="row">
             <div className="col s12 m6">
                     <div className="card blue-grey darken-1">
-                        <div className="card-content white-text">
+                        <div className={` card-content white-text`}>
                             <span className="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+
+                            {isEditing 
+                            ?  (<div className="input-field col s12">
+                                    <textarea id="textarea1" className=" materialize-textarea" 
+                                    onChange={changeTextHandler}  onBlur={togleHandler} value={text} />
+                                </div>) 
+
+                            :  (<div onClick={togleHandler} className={`${styles.cardContent}`} >
+                                    <p>{text}</p>
+                                </div>)}
                         </div>
                         <div className={`${styles.cardFooter} card-action`} >
                             <a href="" className={`${styles.settings} secondary-content`} onClick={showStateHandler}><i className="material-icons tiny " >settings</i></a>

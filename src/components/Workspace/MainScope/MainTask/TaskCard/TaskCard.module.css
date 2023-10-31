@@ -17,3 +17,8 @@
     align-items: center;
     margin-right: 10px !important;
 }
+
+.cardContent{
+    /* white-space: normal; */
+    word-wrap: break-word;
+}
