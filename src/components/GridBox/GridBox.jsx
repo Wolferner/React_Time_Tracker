@@ -4,7 +4,7 @@ import styles from './GridBox.module.css'
 const GridBox = (props) =>{
 
     return(
-        <div className={` ${props.className} row ${styles.displayFlex}`}>
+        <div className={` ${styles.GridBox} ${props.className} row `}>
             {props.children}
         </div>
     )

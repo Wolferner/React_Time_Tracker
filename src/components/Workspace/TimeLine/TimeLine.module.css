@@ -1,0 +1,28 @@
+.timeLine{
+    display: flex;
+    outline: 1px solid red;
+    height: 100vh;
+    width: 100%;
+}
+
+.sideBarCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.rotate90{
+    display: flex;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+.sideBar{
+    width: 70px;
+    background-color: #111;
+    color: white;
+    padding: 20px;}
+
+.card{
+    flex:1;
+    padding: 20px;
+}

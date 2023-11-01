@@ -2,13 +2,13 @@ import React from 'react'
 import styles from './Workspace.module.css'
 import WorkspaceHeader from './WorkspaceHeader/WorkspaceHeader'
 import WsSearching from './WsSearching/WsSearching'
-import MainScope from './MainScope/MainScope'
+import TimeLine from './TimeLine/TimeLine'
 
 const Workspace = () =>{
 
     return(
         <div className='row'>
-            <div className={`${styles.wsHeader} col s12`} >
+            {/* <div className={`${styles.wsHeader} col s12`} >
                 <WorkspaceHeader/>
             </div>
             <div className={`col s12`}>
@@ -16,9 +16,9 @@ const Workspace = () =>{
             </div>
             <div className={`col s12`}>
                 <WsSearching/>
-            </div>
+            </div> */}
             <div className={`col s12`}>
-                <MainScope/>
+                <TimeLine/>
             </div>
         </div>
     )

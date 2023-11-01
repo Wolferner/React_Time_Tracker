@@ -1,0 +1,13 @@
+.timer{
+    display: flex;
+
+}
+
+.btns{
+    display: flex;
+}
+
+.cardFooter{
+    display: flex;
+    justify-content: space-between;
+}
