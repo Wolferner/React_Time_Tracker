@@ -15,10 +15,11 @@ const changeTextHandler = (event) =>{
 }
 
     return(
+
         <div className={`${styles.Task} row`}>
             <div className={`${styles.card} col s12 m6`}>
                 <div className="card blue-grey darken-1">
-                    <div className={` card-content white-text`}>
+                    <div className={`${styles.textArea} card-content white-text`}>
                         <span className="card-title">TEST TITLE</span>
 
                         {isEditing 
@@ -32,7 +33,10 @@ const changeTextHandler = (event) =>{
                             </div>)}
                     </div>
 
-                    <div>{props.children}</div>
+                    <div className={`card-action`} >
+                        {props.children}
+                    </div>
+
                 </div>
             </div>
         </div>

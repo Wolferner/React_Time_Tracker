@@ -1,6 +1,7 @@
 .formCont{
     /* padding: 0px 30px !important; */
     margin-left: 0 !important;
+    width: 300px !important;
 
 }
 
@@ -10,12 +11,16 @@ div > i{
 
 .inputBox{
     /* margin: 5px; */
+
 }
 
 .rowContent{
     display: flex !important;
     outline: 1px dotted gray;
     justify-content: left;
+    padding-left: 15px;
+    /* align-self: flex-start; */
+    
 }
 
 .settings{

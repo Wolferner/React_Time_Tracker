@@ -1,14 +1,22 @@
 .card{
     margin-left: 0px !important;
     width: 350px;
+    min-width: 350px;
+    max-width: 450px;
 }
 
 .Task{
     display: flex;
+    margin: 0;
+
     
 
 }
 
 .cardContent{
-    /* word-wrap: break-word; */
+    word-wrap: break-word;
+}
+
+.textArea{
+    overflow: auto;
 }

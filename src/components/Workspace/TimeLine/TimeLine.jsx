@@ -26,7 +26,7 @@ const datas = [
 
 ]
 
-const MainScope = () =>{
+const MainScope = (props) =>{
 
     return(
         <div className={`${styles.timeLine} `}>
@@ -37,8 +37,8 @@ const MainScope = () =>{
                     
                 </div>
                 <Task>
-                    {/* <InfoBlock/> */}
-                    {/* <TaskTime/> */}
+                    <InfoBlock/>
+                    <TaskTime/>
                 </Task>
                 {/* <div className={`${styles.card}`}>
                 </div> */}
