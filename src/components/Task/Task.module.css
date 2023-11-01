@@ -1,8 +1,14 @@
 .card{
-
+    margin-left: 0px !important;
+    width: 350px;
 }
 
 .Task{
     display: flex;
+    
 
+}
+
+.cardContent{
+    /* word-wrap: break-word; */
 }

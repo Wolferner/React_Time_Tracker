@@ -30,22 +30,19 @@ const MainScope = () =>{
 
     return(
         <div className={`${styles.timeLine} `}>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores placeat quam velit sint! Perferendis autem voluptates, quod consectetur reiciendis impedit distinctio expedita vitae quasi atque repellendus officiis officia magnam repellat.</p>
                 
-            {/* <TimeLineItem>
-                <div className={`${styles.sideBarCont}`}>
-                    <span className={`${styles.rotate90}`}>9:00-9:50</span>
-                    <div className={`${styles.sideBar}`} >
-                        BarSide
-                    </div>
+            <TimeLineItem>
+            <div className={`${styles.rotate90}`}>9:00-9:50</div>
+                <div className={`${styles.sideBar}`} >
+                    
                 </div>
-                <div className={`${styles.card}`}>
-                    <Task>
-                        <InfoBlock/>
-                        <TaskTime/>
-                    </Task>
-                </div>
-            </TimeLineItem> */}
+                <Task>
+                    {/* <InfoBlock/> */}
+                    {/* <TaskTime/> */}
+                </Task>
+                {/* <div className={`${styles.card}`}>
+                </div> */}
+            </TimeLineItem>
         </div>
     )
 }

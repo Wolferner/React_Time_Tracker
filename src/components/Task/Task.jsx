@@ -22,13 +22,13 @@ const changeTextHandler = (event) =>{
                         <span className="card-title">TEST TITLE</span>
 
                         {isEditing 
-                        ?  (<div className="input-field col s12">
+                        ?  (<div className={`${styles.cardContent} input-field col s12`}>
                                 <textarea id="textarea1" className=" materialize-textarea" 
                                 onChange={changeTextHandler}  onBlur={togleHandler} value={text} />
                             </div>) 
 
-                        :  (<div onClick={togleHandler} className={`${styles.cardContent}`} >
-                                <p>{text}</p>
+                        :  (<div onClick={togleHandler} className={`${styles.cardContent} col s12`} >
+                                {text}
                             </div>)}
                     </div>
 

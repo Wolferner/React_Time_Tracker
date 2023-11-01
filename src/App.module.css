@@ -4,5 +4,22 @@
 
 .Menu{
     padding: 0 !important;
+    margin-left: 0 !important;
 }
 
+.modalWindow{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    width: 100% !important;
+}
+
+.Workspace{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+}
+
+.test{
+    flex:1
+}

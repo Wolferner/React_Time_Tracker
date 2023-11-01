@@ -7,17 +7,18 @@ import TimeLine from './TimeLine/TimeLine'
 const Workspace = () =>{
 
     return(
-        <div className='row'>
-            {/* <div className={`${styles.wsHeader} col s12`} >
+        <div className={`${styles.main} row `}>
+            <div className={`${styles.wsHeader} col s12 `} >
                 <WorkspaceHeader/>
             </div>
-            <div className={`col s12`}>
+            <div className={`col s12 `}>
                 <p>Favorits</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ratione explicabo vitae. Suscipit mollitia odit amet assumenda blanditiis, ad aliquam quae corrupti enim beatae incidunt veritatis nostrum accusamus ut animi.</p>
             </div>
-            <div className={`col s12`}>
+            <div className={`col s12 `}>
                 <WsSearching/>
-            </div> */}
-            <div className={`col s12`}>
+            </div>
+            <div className={`col s12 `}>
                 <TimeLine/>
             </div>
         </div>

@@ -1,15 +1,17 @@
 .SideBar{
     display: flex;
-    max-width: 80px;
+    margin: 0px ;
+    padding: 0px;
+    min-height: 100vh;
 }
 
 
 .left{
-    order: 0;
+    /* order: 0; */
 
 }
 .top {
-    order: 0;
+    /* order: 0; */
 
 }
 
@@ -26,11 +28,11 @@
 
 .right {
 
-    order: 1;
+    /* order: 1; */
 
 }
 
 .bottom {
-    order: 3;
+    /* order: 3; */
 }
 

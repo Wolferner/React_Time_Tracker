@@ -3,26 +3,34 @@
     outline: 1px solid red;
     height: 100vh;
     width: 100%;
+    justify-content: left;
+    margin-top: 5px;
 }
 
 .sideBarCont{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    
 }
 
 .rotate90{
     display: flex;
     transform: rotate(-90deg);
-    white-space: nowrap;
+    align-self: center;
+    /* white-space: nowrap; */
 }
 
 .sideBar{
-    width: 70px;
-    background-color: #111;
+    width: 30px;
+    background-color: #a94b4b;
     color: white;
-    padding: 20px;}
-
-.card{
-    flex:1;
     padding: 20px;
+    left: 0px;
 }
+    
+
+/* .card{
+   margin: 0;
+   display: flex;
+
+} */

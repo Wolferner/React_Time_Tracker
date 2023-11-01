@@ -39,7 +39,7 @@ const SideBar = (props) =>{
 
 
     return(
-        <div className={` ${styles.SideBar} s${gridRatio} ${styles[PositionClass]} col `}>
+        <div className={` ${styles.SideBar} s${gridRatio} ${styles[PositionClass]} col  `}>
             {props.children}
         </div>
     )

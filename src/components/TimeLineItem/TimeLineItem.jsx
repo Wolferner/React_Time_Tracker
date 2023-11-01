@@ -4,7 +4,7 @@ import styles from './TimeLineItem.module.css'
 const TimeLineItem = (props) =>{
 
     return(
-        <div className={`${styles.TimeLineItem} outline row`}>
+        <div className={`${styles.TimeLineItem} outline`}>
             {props.children}
         </div>
     )

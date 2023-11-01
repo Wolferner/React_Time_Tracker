@@ -9,19 +9,24 @@ import './main.css'
 
 function App() {
   return (
-    <GridBox className={`outline`}>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores molestias quo reprehenderit doloremque in saepe totam voluptatem? Id optio blanditiis quidem minus sunt. Quas ipsa sequi exercitationem consequuntur quo tempora.</p>
-      {/* <SideBar gridRatio={1} position = {'left'} className='SideBar'>
+    <GridBox className={``}>
+
+      <SideBar gridRatio={1} position = {'left'} className='SideBar'>
         <SideMenu className='SideMenu'/>
+
       </SideBar>
 
-      <div className={`${styles.Menu} col s2`}>
-        <Menu/>
-      </div>
+      <div className={`${styles.modalWindow} col s11`}>
 
-      <div className='col s9'>
-        <Workspace></Workspace>
-      </div> */}
+        <div className={`${styles.Menu} col s2`}>
+          <Menu/>
+        </div>
+
+        <div className={`${styles.Workspace} col s10`}>
+          <Workspace></Workspace>
+        </div>
+
+      </div>
 
     </GridBox>
   )
