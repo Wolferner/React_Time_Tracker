@@ -52,7 +52,7 @@ const [timeLineItems, setTimeLineItems] = useState(propDatas)
             {/* <a onClick={testHandler} href="#" className="btn-floating btn-small waves-effect waves-light red"><i className="material-icons">play_arrow</i></a> */}
 
             {timeLineItems.map(item=>(
-                <div>
+                <div className={`${styles.cont}`}>
                     {/* <div className={`${styles.rotate90}`}>{`${}`}</div> */}
                     <div className={`${styles.sideBar}`} > </div>
                     <TimeLineItem key={item.id} tasks={item.tasks}/>

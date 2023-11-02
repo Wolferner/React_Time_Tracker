@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './TitleInput.module.css'
 import M from 'materialize-css';
 
@@ -17,6 +17,8 @@ const TitleInput = () =>{
       }, []);
     
 
+
+      
     return(
         <div className={`${styles.globalCont} row`}>
 
