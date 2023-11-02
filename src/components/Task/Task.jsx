@@ -4,7 +4,7 @@ import styles from './Task.module.css'
 
 const Task = (props) =>{
 
-    const [text, setText] = useState(props.data.description)
+    const [text, setText] = useState(props.description)
 const [isEditing, setIsEditing] = useState(false)
 
 const togleHandler = ()=>{
@@ -20,16 +20,16 @@ const changeTextHandler = (event) =>{
             <div className={`${styles.card} col s12 m6`}>
                 <div className="card blue-grey darken-1">
                     <div className={`${styles.textArea} card-content white-text`}>
-                        <span className="card-title">{props.data.title}</span>
+                        <span className="card-title">{props.title}</span>
 
                         {isEditing 
                         ?  (<div className={`${styles.cardContent} input-field col s12`}>
                                 <textarea id="textarea1" className=" materialize-textarea" 
-                                onChange={changeTextHandler}  onBlur={togleHandler} value={props.data.description} />
+                                onChange={changeTextHandler}  onBlur={togleHandler} value={props.description} />
                             </div>)
 
                         :  (<div onClick={togleHandler} className={`${styles.cardContent} col s12`} >
-                                {props.data.description}
+                                {props.description}
                             </div>)}
                     </div>
 

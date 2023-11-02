@@ -5,7 +5,7 @@ const TaskTime = (props) =>{
 
     return(
         <div className={`${styles.cardFooter} `} >
-            <div className={`${styles.timer}`}>{props.time}</div>
+            <div className={`${styles.timer}`}>{`${props.timeStart}-${props.timeEnd}`}</div>
             <div className={`${styles.btns}`}>
                 <a href="#" className="btn-floating btn-small waves-effect waves-light red"><i className="material-icons">play_arrow</i></a>
                 <a href="#" className="btn-floating btn-small waves-effect waves-light red"><i className="material-icons">pause</i></a>

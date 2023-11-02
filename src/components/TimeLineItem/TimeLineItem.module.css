@@ -4,5 +4,7 @@
     align-self: flex-start;
     width: 100%;
     height: fit-content;
+    padding: 0;
+    margin: 10px;
 
 }
