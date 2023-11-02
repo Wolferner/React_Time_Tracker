@@ -3,7 +3,7 @@ import styles from './TitleInput.module.css'
 import M from 'materialize-css';
 
 
-const TitleInput = () =>{
+const TitleInput = (props) =>{
 
     useEffect(() => {
         const options = {
@@ -16,9 +16,24 @@ const TitleInput = () =>{
         M.Autocomplete.init(elems, options);
       }, []);
     
+      const [titleKeeper, setTitleKeeper] = useState('')
+      const inputChangeHandler = (event)=>{
+        setTitleKeeper(event.target.value)
+      }
+
+      const [timeStart, setTimeStart] = useState()
 
 
-      
+      const timerStartHandler = (event) =>{
+        event.preventDefault()
+        setTimeStart(new Date().toLocaleTimeString())
+        props.getTimeStart(timeStart)
+        props.getTitle(titleKeeper)
+        
+        // zapusk taimera i otpravka vremeni
+      }
+
+
     return(
         <div className={`${styles.globalCont} row`}>
 
@@ -30,7 +45,7 @@ const TitleInput = () =>{
                     </div>
 
                     <div className={`${styles.inputCont} input-field col s11`}>
-                        <input type="text" id="autocomplete-input" className="autocomplete"/>
+                        <input type="text" id="autocomplete-input" className="autocomplete" onChange={inputChangeHandler}/>
                         <label htmlFor="autocomplete-input">Title</label>
                     </div>
                 </div>
@@ -42,7 +57,7 @@ const TitleInput = () =>{
                         <a href="" className="secondary-content"><i className="material-icons">stop</i></a>
                         <a href="" className="secondary-content"><i
                                 className="material-icons">pause_circle_outline</i></a>
-                        <a href="" className="secondary-content"><i
+                        <a href="" className="secondary-content" onClick={timerStartHandler}><i
                                 className="material-icons">play_circle_outline</i></a>
                     </div>
                     <div id="time_display" className='col s8'>00.00.00</div>
