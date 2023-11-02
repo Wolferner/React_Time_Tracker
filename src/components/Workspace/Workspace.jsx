@@ -4,6 +4,28 @@ import WorkspaceHeader from './WorkspaceHeader/WorkspaceHeader'
 import WsSearching from './WsSearching/WsSearching'
 import TimeLine from './TimeLine/TimeLine'
 
+const datas = [
+    {
+        title: 'Make a job',
+        description: 'i will make a job for some time.i will make a job for some time.i will make a job for some time.i will make a job for some time.',
+
+    },
+    {
+        title: 'Make a Burger',
+        description: 'i will make a job for some time.i will make a job for some time.i will make a job for some time.i will make a job for some time.',
+    },
+    {
+        title: 'Make a Table',
+        description: 'i will make a job for some time.i will make a job for some time.i will make a job for some time.i will make a job for some time.',
+    },
+    {
+        title: 'Dancing',
+        description: 'i will make a job for some time.i will make a job for some time.i will make a job for some time.i will make a job for some time.',
+    }
+
+]
+
+
 const Workspace = () =>{
 
     return(
@@ -19,7 +41,7 @@ const Workspace = () =>{
                 <WsSearching/>
             </div>
             <div className={`col s12 `}>
-                <TimeLine/>
+                <TimeLine datas={datas}/>
             </div>
         </div>
     )
